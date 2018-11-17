@@ -2,8 +2,8 @@
 
 1. Install serverless framework globally
 2. Create a project folder and cd into it.
-3. Then, do the below in your project folder in your terminal.
-```sls -t aws-nodejs```
+3. Then, do the below in your project folder in your terminal. <br />
+```sls -t aws-nodejs``` -t means template.
 4. change serverless.yml file as below:
   ```service: your-project-name ```
   also, adjust stage and region under provider as you like.
@@ -45,7 +45,7 @@ serverless.yml
           path: message/{name}
           method: get
 ```
-10. To run the function <br />
+10. To run the function locally <br />
 in your terminal
 ```sls invoke local -f hello```
 11. deployment <br />
@@ -57,10 +57,10 @@ production:
 ```sls deploy -s production``` or
 ```sls deploy -s production -f hello``` 
 
-12. Log
-in your terminal
-```sls logs -f hello -s dev --startTime 10m ``` logs from last 10 minutes.
-```sls logs -f hello -s production --startTime 10m ``` logs from last 10 minutes.
+12. Log <br />
+in your terminal <br />
+```sls logs -f hello -s dev --startTime 10m ``` dev logs from last 10 minutes. <br />
+```sls logs -f hello -s production --startTime 10m ```  production logs from last 10 minutes.
 
 13. Removing functions
 by stage
