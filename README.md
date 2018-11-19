@@ -60,7 +60,9 @@ production:
 12. Log <br />
 in your terminal <br />
 ```sls logs -f hello -s dev --startTime 10m ``` dev logs from last 10 minutes. <br />
-```sls logs -f hello -s production --startTime 10m ```  production logs from last 10 minutes.
+```sls logs -f hello -s dev -t ``` -t for watch mode <br />
+```sls logs -f hello -s production --startTime 10m ```  production logs from last 10 minutes.<br />
+
 
 13. Removing functions
 by stage
