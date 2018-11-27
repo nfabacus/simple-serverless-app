@@ -45,10 +45,18 @@ serverless.yml
           path: message/{name}
           method: get
 ```
-10. To run the function locally <br />
+
+10. Cron Job Example
+```yaml
+events:
+      - schedule: rate(1 minute)
+```
+
+11. To run the function locally <br />
 in your terminal
 ```sls invoke local -f hello```
-11. deployment <br />
+
+12. deployment <br />
 development:<br />
     ```sls deploy``` staging is set to dev in serverless.yml
     ```sls deploy -f hello``` to deploy specific function only
@@ -57,14 +65,14 @@ production:
 ```sls deploy -s production``` or
 ```sls deploy -s production -f hello``` 
 
-12. Log <br />
+13. Log <br />
 in your terminal <br />
 ```sls logs -f hello -s dev --startTime 10m ``` dev logs from last 10 minutes. <br />
 ```sls logs -f hello -s dev -t ``` -t for watch mode <br />
 ```sls logs -f hello -s production --startTime 10m ```  production logs from last 10 minutes.<br />
 
 
-13. Removing functions
+14. Removing functions
 by stage
 in your terminal
 ```
