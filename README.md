@@ -3,7 +3,7 @@
 1. Install serverless framework globally
 2. Create a project folder and cd into it.
 3. Then, do the below in your project folder in your terminal. <br />
-```sls -t aws-nodejs``` -t means template.
+```sls create -t aws-nodejs``` -t means template.
 4. change serverless.yml file as below:
   ```service: your-project-name ```
   also, adjust stage and region under provider as you like.
